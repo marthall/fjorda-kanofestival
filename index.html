@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Fjorda kanofestival</title>
+    <link rel="icon" type='image/png' href="icon.png">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Taviraj&family=Trirong&display=swap" rel="stylesheet">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+<section class="section-1">
+    <div class="content">
+        <h1>Fjorda kanofestival</h1>
+        <p>30.sept - 2.okt 2022</p>
+    </div>
+</section>
+
+<section class="section-2">
+    <div class="content">
+        <h2>5 år med vin, bål og frostrøyk</h2>
+        <p>
+            Hver år siden 2018 har Kaia og Martin tilbrakt en oktoberhelg i kano ved Fjorda i Gran kommune.
+            Det begynte som en kjærestetur i 2018. De påfølgende årene har vi tatt med forskjellige vennepar,
+            med fokus på litt padling, men mest bål, vin og kos.
+        </p>
+        <p>
+            I år er det 5-årsjubileum for kanotur til Fjorda og vi ønsker å dele denne magiske høsten med fine
+            folk vi liker. Vi slår på stortromma og inviterer til kano-festival!
+        </p>
+    </div>
+</section>
+
+
+<section class="section-3">
+    <div class="header">
+        <h2>Utstyr</h2>
+        <p>Kaia, Martin og Solo booker kanoer og kjøper ved. Redningsvester følger med kanoen.</p>
+    </div>
+
+    <div class="pakkeliste">
+        <h3>Pakkeliste</h3>
+        <ul>
+            <li>Telt eller hengekøye</li>
+            <li>Sovepose og liggeunderlag som tåler minusgrader</li>
+            <li>Varmt tøy (boblejakke og ullundertøy er et must)</li>
+            <li>Et fullt skift om man skulle havne i vannet.</li>
+            <li>Badetøy, for den modige og blyge</li>
+            <li>Alle fikser mat til seg selv, men gjerne gå sammen flere om dere ønsker</li>
+            <li>Primus og matlagingsutstyr</li>
+            <li>Fiskestang for den som vil prøve lykken, men husk å <a href="https://www.inatur.no/fiske/50fe9a11e4b0bfb3e46a9d01/fjorda-flotte-fiskemuligheter-i-gran?gclid=Cj0KCQjw5ZSWBhCVARIsALERCvxOFTkw8nUd0yeMEqqe-JpnyASZVsOlHLy6jPc7wl95mv617IsxAG0aAkHJEALw_wcB">kjøpe fiskekort</a></li>
+            <li>Vin eller annet deilig i turkoppen</li>
+            <li>En felles lek for de lekne</li>
+        </ul>
+    </div>
+
+    <div class="pamelding">
+        <h3>Påmelding</h3>
+        <ul>
+            <li>Påmelding på Facebook innen 31.juli. Trykk på “skal”.</li>
+            <li>Leie per kano (2 pers): 800kr</li>
+            <li>Ved: 200kr</li>
+            <li>Ved avbestilling innen 48 timer refunderes 90% av kanoleien.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="section-3_5">
+</section>
+
+<section class="section-4">
+</section>
+
+<section class="section-5">
+</section>
+
+
+<section class="section-6">
+</section>
+
+<section class="section-7">
+    <div id='map' style='width: 100%; height: 100%;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFydGhhbGwiLCJhIjoiY2l5eDlxeHh0MDAwYTJxcDcwODh3c2wxciJ9.3jBhkcXnePfxR9w7OrSA4Q';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+            center: [10.245966084005746, 60.46206747997837], // starting position [lng, lat]
+            zoom: 11.27, // starting zoom
+            projection: 'globe' // display the map as a 3D globe
+        });
+        map.addControl(new mapboxgl.NavigationControl());
+        map.scrollZoom.disable();
+        new mapboxgl.Marker({color: "#ff0000"}).setLngLat([10.245966084005746, 60.46206747997837])
+            .addTo(map);
+        map.on('style.load', () => {
+            map.setFog({}); // Set the default atmosphere style
+        });
+    </script>
+</section>
+
+
+</body>
+</html>

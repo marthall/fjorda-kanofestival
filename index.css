@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 4em;
+    font-family: 'Taviraj', serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Taviraj', serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Taviraj', serif;
+}
+
+
+li {
+    font-size: 1em;
+    font-family: 'Taviraj', serif;
+    line-height: 1.25em;
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+ul li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url('icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+
+p {
+    font-size: 1.2em;
+    font-family: 'Taviraj', serif;
+    margin-top: 20px;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.section-7 {
+    padding: 0;
+}
+
+
+.section-1 {
+    background-image: url("IMG_20201016_191339.jpg");
+    background-size: cover;
+}
+
+
+.section-1 h1,
+.section-1 p {
+    color: white;
+    text-align: center;
+}
+
+.section-2 {
+    background-image: url("PA053210.jpg");
+}
+
+
+
+.section-2 div.content h2,
+.section-2 div.content p {
+    color: black;
+    max-width: 400px;
+}
+
+.section-3 {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+            "header header"
+            "pakkeliste pamelding";
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.section-3_5 {
+    background-image: url("PA062022.jpg");
+}
+
+.header {
+    grid-area: header;
+}
+
+.pakkeliste {
+    grid-area: pakkeliste;
+}
+
+.pamelding {
+    grid-area: pamelding;
+}
+
+
+.section-4 {
+    background-image: url("PA061998.jpg");
+}
+
+.section-5 {
+    background-image: url("PA053225.jpg");
+}
+
+.section-6 {
+    background-image: url("PA072113.JPG");
+}
+
+.section-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+    section  {
+        padding: 80px 100px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .section-2 {
+        background-position: left 40% bottom 0;
+    }
+
+    .section-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas:
+            "header"
+            "pakkeliste"
+            "pamelding";
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+
+}
+
+
