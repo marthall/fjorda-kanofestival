@@ -93,10 +93,10 @@
             style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
             center: [10.245966084005746, 60.46206747997837], // starting position [lng, lat]
             zoom: 11.27, // starting zoom
-            projection: 'globe', // display the map as a 3D globe
-            cooperativeGestures: true
+            projection: 'globe' // display the map as a 3D globe
         });
         map.addControl(new mapboxgl.NavigationControl());
+        map.dragPan.disable();
         map.scrollZoom.disable();
         new mapboxgl.Marker({color: "#ff0000"}).setLngLat([10.245966084005746, 60.46206747997837])
             .addTo(map);
