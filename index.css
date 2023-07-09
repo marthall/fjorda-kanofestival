@@ -160,11 +160,13 @@ section {
 
     .section-3 {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 1fr;
         grid-template-areas:
             "header"
             "pakkeliste"
             "pamelding";
+
+        height: auto;
     }
 
     body {
@@ -174,8 +176,15 @@ section {
     section {
         padding: 60px 20px;
     }
+}
 
-
+@media (max-width: 600px) {
+    .section-1 {
+        padding: 40px 20px;
+    }
+    .section-1 h1 {
+        font-size: 3em;
+    }
 }
 
 
