@@ -69,7 +69,8 @@ section {
 
 
 .section-1 {
-    background-image: url("IMG_20201016_191339.jpg");
+    padding-top: 50px;
+    background-image: url("P9252099-min.jpg");
     background-size: cover;
 }
 
@@ -106,7 +107,7 @@ section {
 }
 
 .section-3_5 {
-    background-image: url("PA062022.jpg");
+    background-image: url("P9242025-min.jpg");
 }
 
 .header {
@@ -123,15 +124,15 @@ section {
 
 
 .section-4 {
-    background-image: url("PA061998.jpg");
+    background-image: url("P9242009-min.jpg");
 }
 
 .section-5 {
-    background-image: url("PA053225.jpg");
+    background-image: url("P9252054-min.jpg");
 }
 
 .section-6 {
-    background-image: url("PA072113.JPG");
+    background-image: url("P9242003-min.jpg");
 }
 
 .section-7 img {
